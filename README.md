@@ -1,5 +1,23 @@
 # Bank branch search app
 
+## Deliverables:
+
+1. Hosting URL : https://bank-branch-search-app.herokuapp.com/
+2. Github repo link to your solution : https://github.com/rpspace360/bank-branch-search-app
+3. Time taken to complete this exercise: around 15 hours
+4. curl script that makes a call to each of the above mentioned APIs
+```bash
+# curl commands
+
+# Autocomplete API to return possible matches based on the branch name ordered by IFSC code (ascending order) with limit and offset.
+curl --location --request GET 'https://bank-branch-search-app.herokuapp.com/api/branches/autocomplete?q=WORLI&limit=10&offset=10'
+
+
+# Search API to return possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset.
+curl --location --request GET 'https://bank-branch-search-app.herokuapp.com/api/branches?limit=10&offset=0&q=MUMBAI'
+
+``` 
+
 ## Instructions to run the branch search locally: 
 
 

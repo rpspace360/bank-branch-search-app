@@ -16,7 +16,7 @@ class BranchViewSet(ViewSet, LimitOffsetPagination):
     def filter_branch_by_partial_name(self, request):
         partial_name = request.query_params.get('q', None)
 
-        branch_entities = Branch.objects.all()
+        branch_entities = Branch.objects.all().order_by('ifsc')
         if partial_name:
             branch_entities = branch_entities.filter(
                 branch__icontains=partial_name)
@@ -31,7 +31,7 @@ class BranchViewSet(ViewSet, LimitOffsetPagination):
     def filter_branch_by_all(self, request):
         search_text = request.query_params.get('q', None)
 
-        branch_entities = Branch.objects.all()
+        branch_entities = Branch.objects.all().order_by('ifsc')
 
         if search_text:
             branch_entities = Branch.objects.annotate(search=SearchVector(

@@ -86,6 +86,8 @@ WSGI_APPLICATION = 'bank_search_app.wsgi.application'
 #         'PORT': '',
 #     }
 # }
+# TODO: Better to use environment variables for Database Credentials os.environ.get()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
