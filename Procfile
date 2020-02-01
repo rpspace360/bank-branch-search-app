@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn adminApp.wsgi
+web: gunicorn bank_search_app.wsgi
