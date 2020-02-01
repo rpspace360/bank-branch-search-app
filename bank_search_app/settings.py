@@ -76,14 +76,24 @@ WSGI_APPLICATION = 'bank_search_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'bank_branch',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bank_branch',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'bxh0vz4p6sobfdq8uixv',
+        'USER': 'ucjughttmnkjesfznnih',
+        'PASSWORD': 'xn58NEYfILh4u5xCmnCw',
+        'HOST': 'bxh0vz4p6sobfdq8uixv-postgresql.services.clever-cloud.com',
+        'PORT': '5432',
     }
 }
 
